@@ -1,0 +1,483 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 6
+Title ""
+Date ""
+Rev "REV2"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 7050 7000 0    118  ~ 0
+NISSAN 200SX S13 Digital Speedometer\nMain Board - Hybrid IC 3
+Text Notes 9250 7350 0    118  ~ 0
+blog.michalhrouda.cz
+Wire Notes Line
+	9450 4700 9450 2350
+Wire Wire Line
+	7750 3350 7750 3250
+Wire Wire Line
+	7500 3250 7750 3250
+Wire Wire Line
+	7550 4100 7550 3750
+Wire Wire Line
+	5100 4000 5100 4900
+Wire Wire Line
+	7550 3750 7750 3750
+Wire Wire Line
+	7750 3750 7750 3650
+Wire Wire Line
+	5500 4400 5500 4900
+Wire Wire Line
+	5300 4200 5300 4900
+Wire Wire Line
+	7750 4200 7750 3950
+Wire Wire Line
+	5400 4300 5400 4900
+Wire Wire Line
+	8600 4300 8600 3950
+$Comp
+L Device:R HR?
+U 1 1 634330C2
+P 8200 3950
+AR Path="/61F68783/634330C2" Ref="HR?"  Part="1" 
+AR Path="/61F68C90/634330C2" Ref="HR?"  Part="1" 
+AR Path="/61F68C90/634257D4/634330C2" Ref="_HIC3_R6"  Part="1" 
+F 0 "HR?" V 8300 3800 50  0000 L CNN
+F 1 "3K8" V 8400 3900 50  0000 L CNN
+F 2 "" V 8130 3950 50  0001 C CNN
+F 3 "~" H 8200 3950 50  0001 C CNN
+F 4 "Printed" V 8100 3800 50  0000 L CNN "Package"
+	1    8200 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R HR?
+U 1 1 634330CA
+P 8600 3650
+AR Path="/61F68783/634330CA" Ref="HR?"  Part="1" 
+AR Path="/61F68C90/634330CA" Ref="HR?"  Part="1" 
+AR Path="/61F68C90/634257D4/634330CA" Ref="_HIC3_R7"  Part="1" 
+F 0 "HR?" H 8670 3696 50  0000 L CNN
+F 1 "7K0" H 8670 3605 50  0000 L CNN
+F 2 "" V 8530 3650 50  0001 C CNN
+F 3 "~" H 8600 3650 50  0001 C CNN
+F 4 "Printed" V 8500 3500 50  0000 L CNN "Package"
+	1    8600 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R HR?
+U 1 1 634330D1
+P 7750 3500
+AR Path="/61F68783/634330D1" Ref="HR?"  Part="1" 
+AR Path="/61F68C90/634330D1" Ref="HR?"  Part="1" 
+AR Path="/61F68C90/634257D4/634330D1" Ref="_HIC3_R5"  Part="1" 
+F 0 "HR?" H 7820 3546 50  0000 L CNN
+F 1 "3K9" H 7820 3455 50  0000 L CNN
+F 2 "" V 7680 3500 50  0001 C CNN
+F 3 "~" H 7750 3500 50  0001 C CNN
+F 4 "Printed" V 7650 3350 50  0000 L CNN "Package"
+	1    7750 3500
+	1    0    0    -1  
+$EndComp
+Connection ~ 7000 2950
+Wire Wire Line
+	5000 3900 5000 4900
+Wire Wire Line
+	4900 3800 4900 4900
+Wire Wire Line
+	5350 3500 5350 3800
+$Comp
+L Device:R HR?
+U 1 1 634330EE
+P 5750 3550
+AR Path="/61F68783/634330EE" Ref="HR?"  Part="1" 
+AR Path="/61F68C90/634330EE" Ref="HR?"  Part="1" 
+AR Path="/61F68C90/634257D4/634330EE" Ref="_HIC3_R4"  Part="1" 
+F 0 "HR?" H 5820 3596 50  0000 L CNN
+F 1 "1K2" H 5820 3505 50  0000 L CNN
+F 2 "" V 5680 3550 50  0001 C CNN
+F 3 "~" H 5750 3550 50  0001 C CNN
+F 4 "Printed" V 5650 3400 50  0000 L CNN "Package"
+	1    5750 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2950 5750 3400
+$Comp
+L Device:D_Zener HD?
+U 1 1 634330F7
+P 7000 3450
+AR Path="/61F68783/634330F7" Ref="HD?"  Part="1" 
+AR Path="/61F68C90/634330F7" Ref="HD?"  Part="1" 
+AR Path="/61F68C90/634257D4/634330F7" Ref="_HIC3_ZD2"  Part="1" 
+F 0 "HD?" V 6950 2900 50  0000 L CNN
+F 1 "3V6" V 6850 3150 50  0000 L CNN
+F 2 "" H 7000 3450 50  0001 C CNN
+F 3 "~" H 7000 3450 50  0001 C CNN
+F 4 "SOD-80" H 7000 3600 50  0000 C CNN "Package"
+F 5 "ORG-GRN-PINK?" H 7150 3700 50  0000 C CNN "Marking"
+	1    7000 3450
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5350 2700 5350 2650
+Connection ~ 5350 3100
+Wire Wire Line
+	5350 3000 5350 3100
+Wire Wire Line
+	5350 3100 5350 3200
+$Comp
+L Device:R HR?
+U 1 1 63433123
+P 5350 2850
+AR Path="/61F68783/63433123" Ref="HR?"  Part="1" 
+AR Path="/61F68C90/63433123" Ref="HR?"  Part="1" 
+AR Path="/61F68C90/634257D4/63433123" Ref="_HIC3_R3"  Part="1" 
+F 0 "HR?" H 5420 2896 50  0000 L CNN
+F 1 "10K" H 5420 2805 50  0000 L CNN
+F 2 "" V 5280 2850 50  0001 C CNN
+F 3 "~" H 5350 2850 50  0001 C CNN
+F 4 "R0805" V 5250 2850 50  0000 C CNN "Package"
+	1    5350 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C HC?
+U 1 1 63433129
+P 5350 3350
+AR Path="/61F68783/63433129" Ref="HC?"  Part="1" 
+AR Path="/61F68C90/63433129" Ref="HC?"  Part="1" 
+AR Path="/61F68C90/634257D4/63433129" Ref="_HIC3_C1"  Part="1" 
+F 0 "HC?" H 5465 3396 50  0000 L CNN
+F 1 "100nF" H 5465 3305 50  0000 L CNN
+F 2 "" H 5388 3200 50  0001 C CNN
+F 3 "~" H 5350 3350 50  0001 C CNN
+F 4 "C1206" H 5600 3500 50  0000 C CNN "Package"
+	1    5350 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D_Zener HD?
+U 1 1 63433135
+P 4200 3400
+AR Path="/61F68783/63433135" Ref="HD?"  Part="1" 
+AR Path="/61F68C90/63433135" Ref="HD?"  Part="1" 
+AR Path="/61F68C90/634257D4/63433135" Ref="_HIC3_ZD1"  Part="1" 
+F 0 "HD?" V 4154 3480 50  0000 L CNN
+F 1 "22V5" V 4245 3480 50  0000 L CNN
+F 2 "" H 4200 3400 50  0001 C CNN
+F 3 "~" H 4200 3400 50  0001 C CNN
+F 4 "SOD-80" V 4600 3350 50  0000 C CNN "Package"
+F 5 "RED-BLU-YEL" V 4700 3350 50  0000 C CNN "Marking"
+	1    4200 3400
+	0    -1   -1   0   
+$EndComp
+Text Label 5700 3900 0    50   ~ 0
+TR6_BASE
+Text Label 5700 4000 0    50   ~ 0
+TR6_COLLECTOR
+Text Label 5700 4100 0    50   ~ 0
++5V_SW
+Text Label 5700 4400 0    50   ~ 0
+POWER_ENABLE
+Text Label 5700 4300 0    50   ~ 0
+TR5_BASE
+Text Label 5700 4200 0    50   ~ 0
+TR5_COLLECTOR
+Wire Wire Line
+	7500 3250 7500 3700
+Text Label 6100 3800 0    50   ~ 0
+GND
+Wire Wire Line
+	4900 3800 5350 3800
+Wire Wire Line
+	5200 4100 5200 4900
+Wire Wire Line
+	7000 3900 7000 3600
+Wire Wire Line
+	7000 2950 7000 3300
+Wire Wire Line
+	3000 3150 3000 3500
+Wire Wire Line
+	3000 4000 3000 3800
+$Comp
+L Device:R R?
+U 1 1 63433141
+P 3000 3650
+AR Path="/61F68783/63433141" Ref="R?"  Part="1" 
+AR Path="/61F68C90/63433141" Ref="R?"  Part="1" 
+AR Path="/61F68C90/634257D4/63433141" Ref="_HIC3_R1"  Part="1" 
+F 0 "R?" H 3100 3550 50  0000 L CNN
+F 1 "0R" H 3100 3650 50  0000 L CNN
+F 2 "" V 2930 3650 50  0001 C CNN
+F 3 "~" H 3000 3650 50  0001 C CNN
+F 4 "R1206" H 3100 3750 50  0000 L CNN "Package"
+	1    3000 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R HR?
+U 1 1 6343311D
+P 3000 2900
+AR Path="/61F68783/6343311D" Ref="HR?"  Part="1" 
+AR Path="/61F68C90/6343311D" Ref="HR?"  Part="1" 
+AR Path="/61F68C90/634257D4/6343311D" Ref="_HIC3_R2"  Part="1" 
+F 0 "HR?" H 3070 2946 50  0000 L CNN
+F 1 "220R" H 3070 2855 50  0000 L CNN
+F 2 "" V 2930 2900 50  0001 C CNN
+F 3 "~" H 3000 2900 50  0001 C CNN
+F 4 "Printed" V 2900 2750 50  0000 L CNN "Package"
+	1    3000 2900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3500 3650 3600
+Wire Wire Line
+	3150 3600 3150 3150
+Wire Wire Line
+	3150 3150 3000 3150
+Wire Wire Line
+	3000 3150 3000 3050
+Connection ~ 3000 3150
+Wire Wire Line
+	3650 3200 3650 3050
+Wire Wire Line
+	3000 2750 3000 2550
+Text Notes 3600 4600 2    197  ~ 0
+HIC3
+Wire Notes Line
+	2500 2350 2500 4700
+Wire Wire Line
+	3150 3600 3650 3600
+Wire Wire Line
+	4700 4900 4700 3700
+Wire Wire Line
+	4600 4000 4600 4900
+Wire Wire Line
+	4800 3200 4800 3100
+Wire Wire Line
+	6400 3400 6400 3700
+Wire Wire Line
+	6400 3700 7500 3700
+Connection ~ 6400 3700
+Wire Wire Line
+	6400 3700 6400 3800
+Wire Wire Line
+	5100 4000 7400 4000
+Wire Wire Line
+	5200 4100 7550 4100
+Wire Wire Line
+	5300 4200 7750 4200
+$Comp
+L Connector_Generic:Conn_01x10 HIC?
+U 1 1 63433147
+P 5000 4700
+AR Path="/61F68C90/63433147" Ref="HIC?"  Part="1" 
+AR Path="/61F68C90/634257D4/63433147" Ref="HIC3"  Part="1" 
+F 0 "HIC?" V 4900 5350 50  0000 C CNN
+F 1 "Hybrid IC3" V 4900 3900 50  0000 C CNN
+F 2 "" H 5000 4700 50  0001 C CNN
+F 3 "~" H 5000 4700 50  0001 C CNN
+	1    5000 4700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7750 3750 8250 3750
+Connection ~ 7750 3750
+Wire Wire Line
+	5400 4300 8600 4300
+Text Label 7550 3250 0    50   ~ 0
+GND
+Text Label 7800 3750 0    50   ~ 0
++5V_SW
+Wire Wire Line
+	8050 3950 7750 3950
+Wire Wire Line
+	8350 3950 8600 3950
+Wire Wire Line
+	4200 3250 4200 3050
+$Comp
+L Device:D _HIC3_D?
+U 1 1 61FC6DA0
+P 3650 3350
+F 0 "_HIC3_D?" V 3800 3250 50  0000 R CNN
+F 1 "???" V 3700 3250 50  0000 R CNN
+F 2 "" H 3650 3350 50  0001 C CNN
+F 3 "~" H 3650 3350 50  0001 C CNN
+F 4 "SOD-80" V 3600 3250 50  0000 R CNN "Package"
+F 5 "WHT-GRN" V 3500 3250 50  0000 R CNN "Marking"
+	1    3650 3350
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:D _HIC3_D?
+U 1 1 61FD7A03
+P 4800 3350
+F 0 "_HIC3_D?" V 4950 2900 50  0000 L CNN
+F 1 "???" V 4850 2900 50  0000 L CNN
+F 2 "" H 4800 3350 50  0001 C CNN
+F 3 "~" H 4800 3350 50  0001 C CNN
+F 4 "SOD-80" V 4750 2900 50  0000 L CNN "Package"
+F 5 "WHT-GRN" V 4650 2900 50  0000 L CNN "Marking"
+	1    4800 3350
+	0    1    -1   0   
+$EndComp
+Text Label 8350 2650 0    50   ~ 0
++5V_SW
+Wire Wire Line
+	8600 3950 8600 3800
+Connection ~ 8600 3950
+Wire Wire Line
+	5500 4400 9250 4400
+Wire Notes Line
+	6750 1700 6200 1700
+Wire Notes Line
+	6200 1700 6200 2000
+Wire Notes Line
+	6200 2000 6750 2000
+Wire Notes Line
+	6550 2000 6550 2150
+Wire Notes Line
+	6550 2150 6400 2150
+Wire Notes Line
+	6400 2150 6400 2000
+Wire Notes Line
+	6700 1550 6550 1550
+Wire Notes Line
+	6550 1550 6550 1700
+Wire Notes Line
+	6400 1700 6400 1550
+Wire Notes Line
+	6400 1550 6250 1550
+Wire Notes Line
+	6250 1550 6250 1700
+Text Notes 6650 1950 2    50   ~ 0
+SOT-346\nTOP VIEW
+Text Notes 6600 1650 0    50   ~ 0
+B\n\n2
+Text Notes 6450 2300 0    50   ~ 0
+3\n\nC
+Wire Notes Line
+	6700 1700 6700 1550
+Wire Notes Line
+	6750 2000 6750 1700
+Text Notes 6350 1650 2    50   ~ 0
+E\n\n1
+Wire Wire Line
+	6700 2650 6700 3200
+Wire Wire Line
+	6400 3000 6400 2550
+Wire Wire Line
+	4800 3500 4800 4900
+Wire Wire Line
+	4800 3100 5350 3100
+Connection ~ 5350 3800
+Wire Wire Line
+	5350 3800 5750 3800
+Wire Wire Line
+	5350 2650 6700 2650
+Wire Wire Line
+	3000 2550 6400 2550
+Wire Wire Line
+	5750 3700 5750 3800
+Connection ~ 5750 3800
+Wire Wire Line
+	5750 3800 6400 3800
+Wire Notes Line
+	2500 2350 9450 2350
+Wire Notes Line
+	2500 4700 9450 4700
+Wire Wire Line
+	3000 4000 4600 4000
+$Comp
+L Device:Q_PNP_Darlington_EBC HIC3_TR?
+U 1 1 63249B92
+P 6500 3200
+AR Path="/61F68C90/63249B92" Ref="HIC3_TR?"  Part="1" 
+AR Path="/61F68C90/634257D4/63249B92" Ref="_HIC3_TR1"  Part="1" 
+F 0 "HIC3_TR?" H 6691 3337 50  0000 L CNN
+F 1 "2SB852KB" H 6691 3246 50  0000 L CNN
+F 2 "" H 6700 3300 50  0001 C CNN
+F 3 "~" H 6500 3200 50  0001 C CNN
+F 4 "SOT-346" H 6691 3155 50  0000 L CNN "Package"
+F 5 "\"UB\"" H 6691 3064 50  0000 L CNN "Marking"
+	1    6500 3200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PNP_EBC_BRT HIC3_TR?
+U 1 1 61FD2F55
+P 8900 3150
+AR Path="/61F68C90/61FD2F55" Ref="HIC3_TR?"  Part="1" 
+AR Path="/61F68C90/634257D4/61FD2F55" Ref="_HIC3_TR2"  Part="1" 
+F 0 "HIC3_TR?" V 8350 2700 50  0000 L CNN
+F 1 "DTA114EEB " V 8450 2600 50  0000 L CNN
+F 2 "" H 8900 3150 50  0001 C CNN
+F 3 "~" H 8900 3150 50  0001 C CNN
+F 4 "SC-59" V 8550 2800 50  0000 L CNN "Package"
+F 5 "\"14\"" V 8650 2900 50  0000 L CNN "Marking"
+	1    8900 3150
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	8600 3200 8700 3200
+Wire Wire Line
+	8600 3200 8600 3500
+Wire Wire Line
+	9100 3200 9250 3200
+Wire Wire Line
+	9250 3200 9250 4400
+Wire Wire Line
+	8900 2650 8900 2800
+Wire Wire Line
+	8250 2650 8900 2650
+Wire Wire Line
+	3650 3050 4200 3050
+Wire Wire Line
+	4700 3700 4200 3700
+Wire Wire Line
+	4200 3700 4200 3550
+$Comp
+L Device:Q_NPN_EBC _HIC3_TR?
+U 1 1 620B90BF
+P 7750 2750
+F 0 "_HIC3_TR?" H 7950 2600 50  0000 L CNN
+F 1 "2SC1622A" H 7950 2700 50  0000 L CNN
+F 2 "" H 7950 2850 50  0001 C CNN
+F 3 "~" H 7750 2750 50  0001 C CNN
+F 4 "SOT-23?" H 7950 2800 50  0000 L CNN "Package"
+F 5 "\"D17\"" H 7950 2900 50  0000 L CNN "Field5"
+	1    7750 2750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5750 2950 7000 2950
+Wire Wire Line
+	5000 3900 7000 3900
+Wire Wire Line
+	7400 3100 7650 3100
+Wire Wire Line
+	7400 3100 7400 4000
+Wire Wire Line
+	7650 2550 7650 2450
+Wire Wire Line
+	7650 2450 7000 2450
+Wire Wire Line
+	8250 2650 8250 2750
+Wire Wire Line
+	7650 2950 7650 3100
+Wire Wire Line
+	7950 2750 8250 2750
+Connection ~ 8250 2750
+Wire Wire Line
+	8250 2750 8250 3750
+Wire Wire Line
+	7000 2450 7000 2950
+$EndSCHEMATC

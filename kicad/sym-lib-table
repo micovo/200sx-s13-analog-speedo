@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name 200sx-s13-analog-speedo-rescue)(type Legacy)(uri ${KIPRJMOD}/200sx-s13-analog-speedo-rescue.lib)(options "")(descr ""))
+)

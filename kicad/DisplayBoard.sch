@@ -1,0 +1,626 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 7
+Title ""
+Date ""
+Rev "REV2"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 7050 7000 0    118  ~ 0
+NISSAN 200SX S13 Digital Speedometer\nDisplay Board
+$Comp
+L Nissan_200sx:PD6323 IC101
+U 1 1 61F60A8D
+P 5750 5150
+F 0 "IC101" H 5725 6115 50  0000 C CNN
+F 1 "PD6323BC" H 5725 6024 50  0000 C CNN
+F 2 "" H 5450 6100 50  0001 C CNN
+F 3 "" H 5450 6100 50  0001 C CNN
+	1    5750 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C101
+U 1 1 61F60A93
+P 7300 5050
+F 0 "C101" H 7415 5096 50  0000 L CNN
+F 1 "100nF/25V" H 7415 5005 50  0000 L CNN
+F 2 "" H 7338 4900 50  0001 C CNN
+F 3 "~" H 7300 5050 50  0001 C CNN
+	1    7300 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C102
+U 1 1 61F60A99
+P 3350 5350
+F 0 "C102" H 3465 5396 50  0000 L CNN
+F 1 "100pF" H 3465 5305 50  0000 L CNN
+F 2 "" H 3388 5200 50  0001 C CNN
+F 3 "~" H 3350 5350 50  0001 C CNN
+	1    3350 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R101
+U 1 1 61F60A9F
+P 3350 4150
+F 0 "R101" H 3420 4196 50  0000 L CNN
+F 1 "6K5" H 3420 4105 50  0000 L CNN
+F 2 "" V 3280 4150 50  0001 C CNN
+F 3 "~" H 3350 4150 50  0001 C CNN
+	1    3350 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R102
+U 1 1 61F60AA5
+P 4200 5350
+F 0 "R102" H 4270 5396 50  0000 L CNN
+F 1 "100K" H 4270 5305 50  0000 L CNN
+F 2 "" V 4130 5350 50  0001 C CNN
+F 3 "~" H 4200 5350 50  0001 C CNN
+	1    4200 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D101
+U 1 1 61F60AAB
+P 3800 4550
+F 0 "D101" H 3800 4767 50  0000 C CNN
+F 1 "1N4148???" H 3800 4676 50  0000 C CNN
+F 2 "" H 3800 4550 50  0001 C CNN
+F 3 "~" H 3800 4550 50  0001 C CNN
+	1    3800 4550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x08_Male J1
+U 1 1 61F60AB1
+P 1350 4850
+F 0 "J1" H 1458 5331 50  0000 C CNN
+F 1 "CABLE" H 1458 5240 50  0000 C CNN
+F 2 "" H 1350 4850 50  0001 C CNN
+F 3 "~" H 1350 4850 50  0001 C CNN
+	1    1350 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 61F60AB7
+P 1800 5400
+F 0 "#PWR01" H 1800 5150 50  0001 C CNN
+F 1 "GND" H 1805 5227 50  0000 C CNN
+F 2 "" H 1800 5400 50  0001 C CNN
+F 3 "" H 1800 5400 50  0001 C CNN
+	1    1800 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 61F60ABD
+P 5150 5850
+F 0 "#PWR06" H 5150 5600 50  0001 C CNN
+F 1 "GND" H 5155 5677 50  0000 C CNN
+F 2 "" H 5150 5850 50  0001 C CNN
+F 3 "" H 5150 5850 50  0001 C CNN
+	1    5150 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 5750 5150 5750
+Wire Wire Line
+	5150 5750 5150 5850
+$Comp
+L power:GND #PWR08
+U 1 1 61F60AC5
+P 7300 5350
+F 0 "#PWR08" H 7300 5100 50  0001 C CNN
+F 1 "GND" H 7305 5177 50  0000 C CNN
+F 2 "" H 7300 5350 50  0001 C CNN
+F 3 "" H 7300 5350 50  0001 C CNN
+	1    7300 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+10V #PWR02
+U 1 1 61F60ACB
+P 2150 4200
+F 0 "#PWR02" H 2150 4050 50  0001 C CNN
+F 1 "+10V" H 2165 4373 50  0000 C CNN
+F 2 "" H 2150 4200 50  0001 C CNN
+F 3 "" H 2150 4200 50  0001 C CNN
+	1    2150 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 5250 1800 5250
+Wire Wire Line
+	1800 5250 1800 5400
+$Comp
+L power:+10V #PWR03
+U 1 1 61F60AD3
+P 3350 3900
+F 0 "#PWR03" H 3350 3750 50  0001 C CNN
+F 1 "+10V" H 3365 4073 50  0000 C CNN
+F 2 "" H 3350 3900 50  0001 C CNN
+F 3 "" H 3350 3900 50  0001 C CNN
+	1    3350 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 4000 3350 3900
+$Comp
+L power:GND #PWR05
+U 1 1 61F60ADA
+P 4200 5650
+F 0 "#PWR05" H 4200 5400 50  0001 C CNN
+F 1 "GND" H 4205 5477 50  0000 C CNN
+F 2 "" H 4200 5650 50  0001 C CNN
+F 3 "" H 4200 5650 50  0001 C CNN
+	1    4200 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 5650 4200 5500
+Text Notes 1400 6350 0    79   ~ 0
+Blanking fall to low after power-up
+Text Label 4900 4550 0    50   ~ 0
+VFD_BI
+$Comp
+L power:+10V #PWR07
+U 1 1 61F60AE3
+P 7300 4300
+F 0 "#PWR07" H 7300 4150 50  0001 C CNN
+F 1 "+10V" H 7315 4473 50  0000 C CNN
+F 2 "" H 7300 4300 50  0001 C CNN
+F 3 "" H 7300 4300 50  0001 C CNN
+	1    7300 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 4550 3350 4550
+Wire Wire Line
+	3350 4550 3350 4300
+$Comp
+L power:GND #PWR04
+U 1 1 61F60AEB
+P 3350 5600
+F 0 "#PWR04" H 3350 5350 50  0001 C CNN
+F 1 "GND" H 3355 5427 50  0000 C CNN
+F 2 "" H 3350 5600 50  0001 C CNN
+F 3 "" H 3350 5600 50  0001 C CNN
+	1    3350 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 5500 3350 5600
+Wire Wire Line
+	3350 4550 3350 5200
+Connection ~ 3350 4550
+Wire Wire Line
+	2150 4200 2150 4950
+Wire Wire Line
+	1550 4950 2150 4950
+Text Label 1650 4550 0    50   ~ 0
+BLANKING
+Text Label 1650 4650 0    50   ~ 0
+SCK
+Text Label 4900 4450 0    50   ~ 0
+SCK
+Wire Wire Line
+	6150 4650 6750 4650
+Wire Wire Line
+	6150 4550 6750 4550
+Text Label 6400 4650 0    50   ~ 0
+DATAIN
+Text Label 6400 4550 0    50   ~ 0
+LATCH
+Text Label 1650 4750 0    50   ~ 0
+DATAIN
+Wire Wire Line
+	1550 4750 2000 4750
+Wire Wire Line
+	1550 4850 2000 4850
+Text Label 1650 4850 0    50   ~ 0
+LATCH
+Wire Wire Line
+	3950 4550 4200 4550
+Wire Wire Line
+	4200 4550 4200 5200
+Wire Wire Line
+	4750 4450 5300 4450
+Wire Wire Line
+	1550 4650 2000 4650
+Wire Wire Line
+	7300 5200 7300 5350
+Wire Wire Line
+	7300 4450 7300 4900
+Wire Wire Line
+	6150 4750 6600 4750
+Wire Wire Line
+	6150 4850 6600 4850
+Wire Wire Line
+	6150 4950 6600 4950
+Wire Wire Line
+	6150 5050 6600 5050
+Wire Wire Line
+	6150 5150 6600 5150
+Wire Wire Line
+	6150 5250 6600 5250
+Wire Wire Line
+	6150 5350 6600 5350
+Wire Wire Line
+	6150 5450 6600 5450
+Wire Wire Line
+	6150 5550 6600 5550
+Entry Wire Line
+	6600 4750 6700 4850
+Entry Wire Line
+	6600 4850 6700 4950
+Entry Wire Line
+	6600 4950 6700 5050
+Entry Wire Line
+	6600 5050 6700 5150
+Entry Wire Line
+	6600 5150 6700 5250
+Entry Wire Line
+	6600 5250 6700 5350
+Entry Wire Line
+	6600 5350 6700 5450
+Entry Wire Line
+	6600 5450 6700 5550
+Connection ~ 6700 6150
+Wire Bus Line
+	6700 6150 9050 6150
+Entry Wire Line
+	4900 4650 4800 4750
+Wire Wire Line
+	4900 4650 5300 4650
+Connection ~ 4200 4550
+Wire Wire Line
+	4200 4550 5300 4550
+Wire Wire Line
+	4900 4750 5000 4750
+Entry Wire Line
+	4900 5250 4800 5350
+Wire Wire Line
+	4900 5250 5300 5250
+Entry Wire Line
+	4900 5350 4800 5450
+Wire Wire Line
+	4900 5350 5300 5350
+Entry Wire Line
+	4900 5450 4800 5550
+Wire Wire Line
+	4900 5450 5300 5450
+Entry Wire Line
+	4900 5550 4800 5650
+Wire Wire Line
+	4900 5550 5300 5550
+Entry Wire Line
+	4900 5650 4800 5750
+Wire Wire Line
+	4900 5650 5300 5650
+Wire Bus Line
+	4800 6150 6700 6150
+NoConn ~ 4550 1600
+NoConn ~ 7150 1600
+NoConn ~ 7050 3250
+NoConn ~ 4550 3250
+NoConn ~ 4650 3250
+NoConn ~ 7150 3250
+Wire Wire Line
+	7050 1600 7050 1350
+Wire Wire Line
+	2800 1350 2800 5050
+Text Label 1650 5050 0    50   ~ 0
+CATHODE_FILAMENT_RIGHT
+Wire Wire Line
+	2800 1350 7050 1350
+Wire Wire Line
+	2900 1450 4650 1450
+Wire Wire Line
+	4650 1450 4650 1600
+Wire Wire Line
+	1550 5050 2800 5050
+Wire Wire Line
+	1550 5150 2900 5150
+Wire Wire Line
+	1550 4550 3350 4550
+Text Label 1650 5150 0    50   ~ 0
+CATHODE_FILAMENT_LEFT
+NoConn ~ 4850 3250
+NoConn ~ 4850 1600
+NoConn ~ 6850 1600
+$Comp
+L Nissan_200sx:200sx-s13-digi-dash-display VFT1
+U 1 1 61F60B40
+P 5800 2450
+F 0 "VFT1" H 7528 2521 50  0000 L CNN
+F 1 "200sx-s13-digi-dash-display" H 7528 2430 50  0000 L CNN
+F 2 "" H 5000 2250 50  0001 C CNN
+F 3 "" H 5000 2250 50  0001 C CNN
+	1    5800 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+10V #PWR09
+U 1 1 61F60B46
+P 7700 3450
+F 0 "#PWR09" H 7700 3300 50  0001 C CNN
+F 1 "+10V" H 7715 3623 50  0000 C CNN
+F 2 "" H 7700 3450 50  0001 C CNN
+F 3 "" H 7700 3450 50  0001 C CNN
+	1    7700 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6650 3250 6650 3700
+Entry Wire Line
+	6650 3700 6750 3800
+Entry Wire Line
+	6550 3700 6650 3800
+Text Label 6650 3600 1    50   ~ 0
+O0
+Text Label 6550 3600 1    50   ~ 0
+O1-2
+Text Label 5050 4650 0    50   ~ 0
+O0
+Text Label 5050 4750 0    50   ~ 0
+O1-2
+Wire Wire Line
+	6550 3250 6550 3700
+Entry Wire Line
+	4900 4750 4800 4850
+Wire Wire Line
+	5000 4850 5000 4750
+Connection ~ 5000 4750
+Wire Wire Line
+	5000 4750 5300 4750
+Wire Wire Line
+	5000 4850 5300 4850
+Wire Wire Line
+	5850 3250 5850 3700
+Wire Wire Line
+	5950 3250 5950 3700
+Wire Wire Line
+	6050 3250 6050 3700
+Entry Wire Line
+	6050 3700 6150 3800
+Entry Wire Line
+	5950 3700 6050 3800
+Entry Wire Line
+	5850 3700 5950 3800
+Text Label 6050 3600 1    50   ~ 0
+O3
+Text Label 5950 3600 1    50   ~ 0
+O4
+Text Label 5850 3600 1    50   ~ 0
+O5
+NoConn ~ 6450 3250
+NoConn ~ 6750 3250
+NoConn ~ 6350 3250
+NoConn ~ 6250 3250
+NoConn ~ 6150 3250
+NoConn ~ 5750 3250
+NoConn ~ 5250 1600
+NoConn ~ 5850 1600
+NoConn ~ 6450 1600
+NoConn ~ 5050 3250
+NoConn ~ 5150 3250
+NoConn ~ 5250 3250
+NoConn ~ 5350 3250
+Wire Wire Line
+	6150 4450 7300 4450
+Wire Wire Line
+	7300 4300 7300 4450
+Connection ~ 7300 4450
+Wire Wire Line
+	2900 5150 2900 1450
+Connection ~ 9050 3800
+Wire Bus Line
+	9050 3800 9050 6150
+Wire Wire Line
+	5050 1600 5050 950 
+Entry Wire Line
+	5050 950  5150 850 
+Wire Wire Line
+	5150 1600 5150 950 
+Entry Wire Line
+	5150 950  5250 850 
+Wire Wire Line
+	5350 1600 5350 950 
+Entry Wire Line
+	5350 950  5450 850 
+Wire Wire Line
+	5450 1600 5450 950 
+Entry Wire Line
+	5450 950  5550 850 
+Wire Wire Line
+	5550 1600 5550 950 
+Entry Wire Line
+	5550 950  5650 850 
+Wire Wire Line
+	5650 1600 5650 950 
+Entry Wire Line
+	5650 950  5750 850 
+Wire Wire Line
+	5950 1600 5950 950 
+Entry Wire Line
+	5950 950  6050 850 
+Wire Wire Line
+	6050 1600 6050 950 
+Entry Wire Line
+	6050 950  6150 850 
+Wire Wire Line
+	6150 1600 6150 950 
+Entry Wire Line
+	6150 950  6250 850 
+Wire Wire Line
+	6250 1600 6250 950 
+Entry Wire Line
+	6250 950  6350 850 
+Wire Wire Line
+	6550 1600 6550 950 
+Entry Wire Line
+	6550 950  6650 850 
+Wire Wire Line
+	6650 1600 6650 950 
+Entry Wire Line
+	6650 950  6750 850 
+Wire Wire Line
+	5750 1600 5750 950 
+Entry Wire Line
+	5750 950  5850 850 
+Wire Wire Line
+	6350 1600 6350 950 
+Entry Wire Line
+	6350 950  6450 850 
+Text Label 6300 5550 0    50   ~ 0
+O19
+Text Label 5050 1200 1    50   ~ 0
+O19
+Text Label 5150 1200 1    50   ~ 0
+O18
+Text Label 6300 5450 0    50   ~ 0
+O18
+Text Label 5350 1200 1    50   ~ 0
+O17
+Text Label 5450 1200 1    50   ~ 0
+O16
+Text Label 5550 1200 1    50   ~ 0
+O15
+Text Label 5650 1200 1    50   ~ 0
+O14
+Text Label 5750 1200 1    50   ~ 0
+O13
+Text Label 6450 5350 2    50   ~ 0
+O17
+Text Label 6450 5250 2    50   ~ 0
+O16
+Text Label 6450 5150 2    50   ~ 0
+O15
+Text Label 6450 5050 2    50   ~ 0
+O14
+Text Label 6450 4950 2    50   ~ 0
+O13
+Text Label 6300 4850 0    50   ~ 0
+O12
+Text Label 6300 4750 0    50   ~ 0
+O11
+Text Label 5950 1200 1    50   ~ 0
+O12
+Text Label 6050 1200 1    50   ~ 0
+O11
+Text Label 6150 1200 1    50   ~ 0
+O10
+Text Label 6250 1200 1    50   ~ 0
+O9
+Text Label 6350 1200 1    50   ~ 0
+O8
+Text Label 6550 1200 1    50   ~ 0
+O7
+Text Label 6650 1200 1    50   ~ 0
+O6
+Wire Bus Line
+	9050 850  9050 3800
+NoConn ~ 6150 5650
+Text Label 5050 5650 0    50   ~ 0
+O10
+Text Label 5050 5550 0    50   ~ 0
+O9
+Text Label 5050 5450 0    50   ~ 0
+O8
+Text Label 5050 5350 0    50   ~ 0
+O7
+Text Label 5050 5250 0    50   ~ 0
+O6
+NoConn ~ 5300 5150
+NoConn ~ 5300 5050
+NoConn ~ 5300 4950
+Text Notes 7700 6100 0    118  ~ 0
+ANODES
+Text Notes 7950 3500 0    118  ~ 0
+GRID
+Wire Wire Line
+	6850 3450 7700 3450
+Wire Wire Line
+	6850 3250 6850 3450
+Text Notes 2800 1300 0    118  ~ 0
+CATHODE - FILAMENT
+NoConn ~ 6150 5750
+Text Notes 1400 6800 0    79   ~ 0
+Connect GND, VBAT, IGN ACC, IGN ON\nand check that there are data/clock\n
+Text Notes 1000 1000 0    79   ~ 0
+Filament glow should be visible in the dark.\nCheck input current if no glow is visible.
+Text Notes 1400 7250 0    118  ~ 0
+DO NOT SHORT ANY DATA SIGNALS WITH +10V!
+Wire Notes Line
+	6250 5750 6150 5750
+Text Notes 6600 4400 0    197  ~ 0
+!!!
+Text Notes 9150 7350 0    118  ~ 0
+blog.michalhrouda.cz
+Wire Notes Line
+	6250 6700 6250 5750
+Wire Notes Line
+	4550 6300 4550 4550
+Wire Notes Line
+	3800 6300 4550 6300
+Wire Notes Line
+	3800 6700 6250 6700
+Wire Notes Line
+	1300 4850 1150 4850
+Wire Notes Line
+	1150 6700 1350 6700
+Wire Notes Line
+	1300 4750 1150 4750
+Wire Notes Line
+	1300 4650 1150 4650
+Wire Notes Line
+	1150 4650 1150 6700
+Wire Notes Line
+	950  4850 1050 4850
+Wire Notes Line
+	950  4750 1050 4750
+Wire Notes Line
+	950  4650 1050 4650
+Wire Notes Line
+	950  4550 1050 4550
+Wire Notes Line
+	6850 4550 7000 4550
+Wire Notes Line
+	6850 4650 7000 4650
+Wire Notes Line
+	1050 4950 950  4950
+Wire Notes Line
+	1300 7250 950  7250
+Wire Notes Line
+	950  4550 950  7250
+Text Notes 1350 7450 0    79   ~ 0
+Short will damage IC101, CPU on main board and +10V power supply!
+Wire Notes Line
+	7000 6350 6450 6350
+Wire Notes Line
+	6450 6350 6450 7250
+Wire Notes Line
+	6450 7250 5750 7250
+Wire Notes Line
+	7000 4550 7000 6350
+Wire Bus Line
+	4800 4750 4800 6150
+Wire Bus Line
+	5950 3800 9050 3800
+Wire Bus Line
+	6700 4850 6700 6150
+Wire Bus Line
+	5150 850  9050 850 
+$EndSCHEMATC

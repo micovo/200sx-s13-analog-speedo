@@ -1,0 +1,591 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 6
+Title ""
+Date ""
+Rev "REV2"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 7100 7000 0    118  ~ 0
+NISSAN 200SX S13 Digital Speedometer\nMain Board - Hybrid IC 2
+Text Notes 9250 7350 0    118  ~ 0
+blog.michalhrouda.cz
+$Comp
+L Device:C C?
+U 1 1 620AAC7C
+P 7000 3550
+AR Path="/61F68783/620AAC7C" Ref="C?"  Part="1" 
+AR Path="/61F68783/6CF30962/620AAC7C" Ref="HIC2_C3"  Part="1" 
+AR Path="/620C8115/6CF30962/620AAC7C" Ref="C?"  Part="1" 
+F 0 "C?" V 6750 3650 50  0000 R CNN
+F 1 "220nF" V 6850 3650 50  0000 R CNN
+F 2 "" H 7038 3400 50  0001 C CNN
+F 3 "~" H 7000 3550 50  0001 C CNN
+F 4 "C0805" V 7150 3550 50  0000 C CNN "Package"
+	1    7000 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 620A9944
+P 7000 4950
+AR Path="/61F68783/620A9944" Ref="C?"  Part="1" 
+AR Path="/61F68783/6CF30962/620A9944" Ref="HIC2_C4"  Part="1" 
+AR Path="/620C8115/6CF30962/620A9944" Ref="C?"  Part="1" 
+F 0 "C?" V 6750 5100 50  0000 R CNN
+F 1 "220nF" V 6850 5050 50  0000 R CNN
+F 2 "" H 7038 4800 50  0001 C CNN
+F 3 "~" H 7000 4950 50  0001 C CNN
+F 4 "C0805" V 7150 4950 50  0000 C CNN "Package"
+	1    7000 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R HR?
+U 1 1 620B2484
+P 6600 5250
+AR Path="/61F68783/620B2484" Ref="HR?"  Part="1" 
+AR Path="/61F68C90/620B2484" Ref="HR?"  Part="1" 
+AR Path="/61F68783/6CF30962/620B2484" Ref="HIC2_R6"  Part="1" 
+AR Path="/620C8115/6CF30962/620B2484" Ref="HR?"  Part="1" 
+F 0 "HR?" H 6670 5296 50  0000 L CNN
+F 1 "5K1" H 6670 5205 50  0000 L CNN
+F 2 "" V 6530 5250 50  0001 C CNN
+F 3 "~" H 6600 5250 50  0001 C CNN
+F 4 "Printed" V 6500 5100 50  0000 L CNN "Package"
+	1    6600 5250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 620A6E36
+P 7000 5600
+AR Path="/61F68783/620A6E36" Ref="R?"  Part="1" 
+AR Path="/61F68783/6CF30962/620A6E36" Ref="HIC2_R10"  Part="1" 
+AR Path="/620C8115/6CF30962/620A6E36" Ref="R?"  Part="1" 
+F 0 "R?" V 6793 5600 50  0000 C CNN
+F 1 "1K" V 6884 5600 50  0000 C CNN
+F 2 "" V 6930 5600 50  0001 C CNN
+F 3 "~" H 7000 5600 50  0001 C CNN
+F 4 "R0805" V 7100 5600 50  0000 C CNN "Package"
+	1    7000 5600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 4250 6100 4250
+Wire Wire Line
+	5950 4050 5950 4250
+Text Notes 5950 3500 0    50   ~ 0
+HUD BRG IN\nINPUT PROTECTION
+Text Notes 6000 4900 0    50   ~ 0
+HUD BRG 12V \nINPUT PROTECTION
+Text Label 6500 3050 3    50   ~ 0
+GND
+Text Label 5300 3250 2    50   ~ 0
+GND
+Text Label 4900 2500 1    50   ~ 0
+GND
+Wire Wire Line
+	5950 1400 5950 2550
+Wire Wire Line
+	5650 1400 5950 1400
+Wire Wire Line
+	5650 2550 5850 2550
+Connection ~ 5650 2550
+Wire Wire Line
+	5350 1650 5350 1300
+Connection ~ 4900 1650
+Wire Wire Line
+	4900 3250 4900 2250
+Wire Wire Line
+	5850 2950 5850 2550
+Wire Wire Line
+	6000 2950 5850 2950
+Wire Wire Line
+	6500 2950 6500 3250
+Connection ~ 6500 2950
+Connection ~ 5500 3250
+Wire Wire Line
+	5500 3250 6500 3250
+Wire Wire Line
+	5500 3050 5500 3250
+Wire Wire Line
+	5500 2550 5650 2550
+Connection ~ 5500 2550
+Wire Wire Line
+	5500 2750 5500 2550
+$Comp
+L Device:D_Zener ZD?
+U 1 1 622EF82B
+P 5500 2900
+AR Path="/61F68783/622EF82B" Ref="ZD?"  Part="1" 
+AR Path="/61F68C90/622EF82B" Ref="ZD?"  Part="1" 
+AR Path="/61F68783/6CF30962/622EF82B" Ref="HIC2_ZD1"  Part="1" 
+AR Path="/620C8115/6CF30962/622EF82B" Ref="ZD?"  Part="1" 
+F 0 "ZD?" V 5550 3000 50  0000 L CNN
+F 1 "4.5V" V 5450 3000 50  0000 L CNN
+F 2 "" H 5500 2900 50  0001 C CNN
+F 3 "~" H 5500 2900 50  0001 C CNN
+F 4 "SOD-80" V 5350 3000 50  0000 L CNN "Package"
+F 5 "YEL-ORG-GRN" V 5050 2650 50  0000 L CNN "Marking"
+	1    5500 2900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6050 2550 5950 2550
+Wire Wire Line
+	6350 2550 6750 2550
+Wire Wire Line
+	6500 2950 6300 2950
+Wire Wire Line
+	4900 1200 4900 900 
+Text Label 5650 2400 1    50   ~ 0
+SPEED_B
+Wire Wire Line
+	5650 2550 5650 1900
+Wire Wire Line
+	5650 1400 5650 1600
+Wire Wire Line
+	4900 1650 4900 1500
+Wire Wire Line
+	4900 1950 4900 1650
+$Comp
+L Device:R HR?
+U 1 1 62303CFE
+P 6900 2550
+AR Path="/61F68783/62303CFE" Ref="HR?"  Part="1" 
+AR Path="/61F68C90/62303CFE" Ref="HR?"  Part="1" 
+AR Path="/61F68783/6CF30962/62303CFE" Ref="HIC2_R7"  Part="1" 
+AR Path="/620C8115/6CF30962/62303CFE" Ref="HR?"  Part="1" 
+F 0 "HR?" V 7100 2400 50  0000 L CNN
+F 1 "146K" V 7000 2450 50  0000 L CNN
+F 2 "" V 6830 2550 50  0001 C CNN
+F 3 "~" H 6900 2550 50  0001 C CNN
+F 4 "Printed" V 6800 2400 50  0000 L CNN "Package"
+	1    6900 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 622FC31E
+P 6200 2550
+AR Path="/61F68783/622FC31E" Ref="R?"  Part="1" 
+AR Path="/61F68783/6CF30962/622FC31E" Ref="HIC2_R3"  Part="1" 
+AR Path="/620C8115/6CF30962/622FC31E" Ref="R?"  Part="1" 
+F 0 "R?" V 5993 2550 50  0000 C CNN
+F 1 "0R" V 6084 2550 50  0000 C CNN
+F 2 "" V 6130 2550 50  0001 C CNN
+F 3 "~" H 6200 2550 50  0001 C CNN
+F 4 "R1206" V 6300 2550 50  0000 C CNN "Package"
+	1    6200 2550
+	0    1    1    0   
+$EndComp
+Text Label 3250 3550 0    50   ~ 0
++5V_SW
+$Comp
+L 200sx-digi-dash-rescue:C_Polarized-Device C?
+U 1 1 622F2E5C
+P 6150 2950
+AR Path="/61F68783/622F2E5C" Ref="C?"  Part="1" 
+AR Path="/61F68783/6CF30962/622F2E5C" Ref="HIC2_C2"  Part="1" 
+AR Path="/622F2E5C" Ref="HIC2_C2"  Part="1" 
+AR Path="/620C8115/6CF30962/622F2E5C" Ref="C?"  Part="1" 
+F 0 "C?" V 6050 2500 50  0000 R CNN
+F 1 ".47uF 50V" V 6150 2500 50  0000 R CNN
+F 2 "" H 6188 2800 50  0001 C CNN
+F 3 "~" H 6150 2950 50  0001 C CNN
+F 4 "D4x5.4mm" V 6250 2500 50  0000 R CNN "Package"
+	1    6150 2950
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R HR?
+U 1 1 622ECBFE
+P 5650 1750
+AR Path="/61F68783/622ECBFE" Ref="HR?"  Part="1" 
+AR Path="/61F68C90/622ECBFE" Ref="HR?"  Part="1" 
+AR Path="/61F68783/6CF30962/622ECBFE" Ref="HIC2_R2"  Part="1" 
+AR Path="/620C8115/6CF30962/622ECBFE" Ref="HR?"  Part="1" 
+F 0 "HR?" V 5750 1600 50  0000 L CNN
+F 1 "20K" V 5850 1650 50  0000 L CNN
+F 2 "" V 5580 1750 50  0001 C CNN
+F 3 "~" H 5650 1750 50  0001 C CNN
+F 4 "Printed" V 5550 1600 50  0000 L CNN "Package"
+	1    5650 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R HR?
+U 1 1 622EBD7F
+P 4900 1350
+AR Path="/61F68783/622EBD7F" Ref="HR?"  Part="1" 
+AR Path="/61F68C90/622EBD7F" Ref="HR?"  Part="1" 
+AR Path="/61F68783/6CF30962/622EBD7F" Ref="HIC2_R1"  Part="1" 
+AR Path="/620C8115/6CF30962/622EBD7F" Ref="HR?"  Part="1" 
+F 0 "HR?" H 4970 1396 50  0000 L CNN
+F 1 "57K?" H 4970 1305 50  0000 L CNN
+F 2 "" V 4830 1350 50  0001 C CNN
+F 3 "~" H 4900 1350 50  0001 C CNN
+F 4 "Printed" V 4800 1200 50  0000 L CNN "Package"
+	1    4900 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 622E9F9C
+P 4900 2100
+AR Path="/61F68783/622E9F9C" Ref="C?"  Part="1" 
+AR Path="/61F68783/6CF30962/622E9F9C" Ref="HIC2_C1"  Part="1" 
+AR Path="/620C8115/6CF30962/622E9F9C" Ref="C?"  Part="1" 
+F 0 "C?" H 4785 2146 50  0000 R CNN
+F 1 "???" H 4785 2055 50  0000 R CNN
+F 2 "" H 4938 1950 50  0001 C CNN
+F 3 "~" H 4900 2100 50  0001 C CNN
+F 4 "C0805" H 4650 1950 50  0000 C CNN "Package"
+	1    4900 2100
+	1    0    0    -1  
+$EndComp
+Text Label 3250 3950 0    50   ~ 0
+HUD_BRG_IN
+Text Label 5050 3950 0    50   ~ 0
+HUD_BRG_IN
+Text Label 5050 4050 0    50   ~ 0
+CONN1_HUD_BRG_IN
+Connection ~ 6600 3550
+Wire Wire Line
+	5950 3550 6600 3550
+Wire Wire Line
+	5950 3950 5950 3550
+Text Label 3250 4150 0    50   ~ 0
+HUD_BRG_12V
+Text Label 5050 4950 0    50   ~ 0
+HUD_BRG_12V
+Text Label 5050 5600 0    50   ~ 0
+CONN1_HUD_BRG_12V
+Connection ~ 6600 4950
+Wire Wire Line
+	4500 4950 4500 4150
+Wire Wire Line
+	4400 4250 4400 5600
+$Comp
+L Connector_Generic:Conn_01x09 HIC?
+U 1 1 620D6605
+P 2950 3950
+AR Path="/61F68783/620D6605" Ref="HIC?"  Part="1" 
+AR Path="/61F68783/6CF30962/620D6605" Ref="HIC2B"  Part="1" 
+AR Path="/620C8115/6CF30962/620D6605" Ref="HIC?"  Part="1" 
+F 0 "HIC?" H 2600 3400 50  0000 L CNN
+F 1 "Hybrid IC2" H 2500 3300 50  0000 L CNN
+F 2 "" H 2950 3950 50  0001 C CNN
+F 3 "~" H 2950 3950 50  0001 C CNN
+	1    2950 3950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 4250 6850 4250
+Connection ~ 6600 4250
+Text Label 3250 3650 0    50   ~ 0
+SPEED_SIGNAL
+Text Label 3250 3850 0    50   ~ 0
+GND
+Text Label 3250 3750 0    50   ~ 0
+SPEED_B
+Text Label 3250 4050 0    50   ~ 0
+CONN1_HUD_BRG_IN
+Text Label 3250 4250 0    50   ~ 0
+CONN1_HUD_BRG_12V
+Text Label 3250 4350 0    50   ~ 0
+GND
+Wire Wire Line
+	6600 3550 6850 3550
+Wire Wire Line
+	6600 3750 6600 3550
+Wire Wire Line
+	6600 4050 6600 4250
+$Comp
+L Device:R HR?
+U 1 1 620B885E
+P 6600 3900
+AR Path="/61F68783/620B885E" Ref="HR?"  Part="1" 
+AR Path="/61F68C90/620B885E" Ref="HR?"  Part="1" 
+AR Path="/61F68783/6CF30962/620B885E" Ref="HIC2_R5"  Part="1" 
+AR Path="/620C8115/6CF30962/620B885E" Ref="HR?"  Part="1" 
+F 0 "HR?" H 6700 3950 50  0000 L CNN
+F 1 "5K1" H 6670 3855 50  0000 L CNN
+F 2 "" V 6530 3900 50  0001 C CNN
+F 3 "~" H 6600 3900 50  0001 C CNN
+F 4 "Printed" V 6500 3750 50  0000 L CNN "Package"
+	1    6600 3900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 4950 6850 4950
+Wire Wire Line
+	6600 5100 6600 4950
+Wire Wire Line
+	6600 5600 6850 5600
+Connection ~ 6600 5600
+Wire Wire Line
+	6600 5400 6600 5600
+Wire Wire Line
+	6400 5600 6600 5600
+Wire Wire Line
+	6400 4250 6600 4250
+$Comp
+L Device:R R?
+U 1 1 620AAC76
+P 7000 4250
+AR Path="/61F68783/620AAC76" Ref="R?"  Part="1" 
+AR Path="/61F68783/6CF30962/620AAC76" Ref="HIC2_R9"  Part="1" 
+AR Path="/620C8115/6CF30962/620AAC76" Ref="R?"  Part="1" 
+F 0 "R?" V 6793 4250 50  0000 C CNN
+F 1 "1K" V 6884 4250 50  0000 C CNN
+F 2 "" V 6930 4250 50  0001 C CNN
+F 3 "~" H 7000 4250 50  0001 C CNN
+F 4 "R0805" V 7100 4250 50  0000 C CNN "Package"
+	1    7000 4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 5950 4100 4350
+Wire Notes Line
+	8350 6200 2950 6200
+Wire Wire Line
+	4100 900  4100 3550
+Wire Wire Line
+	4100 900  4900 900 
+Text Label 4500 3050 1    50   ~ 0
+SPEED_B
+Wire Wire Line
+	4500 3750 4500 2550
+Wire Wire Line
+	4500 2550 5500 2550
+Text Label 4300 1650 0    50   ~ 0
+SPEED_SIGNAL
+Wire Wire Line
+	4200 3650 4200 1650
+Wire Wire Line
+	4200 1650 4900 1650
+Wire Wire Line
+	3150 4350 4100 4350
+Wire Wire Line
+	3150 4250 4400 4250
+Wire Wire Line
+	3150 4150 4500 4150
+Wire Wire Line
+	3150 4050 5950 4050
+Wire Wire Line
+	3150 3950 5950 3950
+Wire Wire Line
+	3150 3850 4700 3850
+Wire Wire Line
+	3150 3750 4500 3750
+Wire Wire Line
+	3150 3650 4200 3650
+Wire Wire Line
+	3150 3550 4100 3550
+Wire Wire Line
+	4400 5600 6100 5600
+Wire Wire Line
+	4500 4950 6600 4950
+Wire Wire Line
+	4700 3250 4700 3850
+Wire Wire Line
+	4700 3250 4900 3250
+Wire Wire Line
+	8000 1600 8000 3550
+Wire Wire Line
+	8000 3550 8000 4950
+Connection ~ 8000 3550
+Wire Wire Line
+	7500 4250 7500 5600
+Connection ~ 7500 4250
+NoConn ~ 7750 1400
+Text Label 7500 5250 3    50   ~ 0
++5V_SW
+Text Label 7500 3900 3    50   ~ 0
++5V_SW
+Text Label 7500 2500 1    50   ~ 0
++5V_SW
+Connection ~ 7500 1500
+Connection ~ 7500 1300
+Wire Wire Line
+	7500 1300 7500 1500
+Text Label 8000 3450 1    50   ~ 0
+GND
+Text Label 8000 4900 1    50   ~ 0
+GND
+Wire Wire Line
+	7500 900  7500 1300
+Connection ~ 8000 4950
+Wire Wire Line
+	8000 5950 8000 4950
+Text Label 6500 2000 1    50   ~ 0
+GND
+Text Notes 5850 1200 0    50   ~ 0
+COMPARATOR?\nZERO-CROSSING?
+Wire Wire Line
+	7000 1750 7000 2050
+Wire Wire Line
+	6500 1600 6500 2050
+Connection ~ 6500 2050
+Wire Wire Line
+	7000 2050 6950 2050
+Connection ~ 7000 2050
+Text Label 7150 1500 0    50   ~ 0
++5V_SW
+Wire Wire Line
+	6500 2050 6650 2050
+Text Label 7150 1300 0    50   ~ 0
++5V_SW
+Text Label 7300 1600 2    50   ~ 0
+GND
+Wire Wire Line
+	6500 1600 6600 1600
+Wire Wire Line
+	7100 2050 7000 2050
+$Comp
+L Device:R HR?
+U 1 1 623053F8
+P 6800 2050
+AR Path="/61F68783/623053F8" Ref="HR?"  Part="1" 
+AR Path="/61F68C90/623053F8" Ref="HR?"  Part="1" 
+AR Path="/61F68783/6CF30962/623053F8" Ref="HIC2_R4"  Part="1" 
+AR Path="/620C8115/6CF30962/623053F8" Ref="HR?"  Part="1" 
+F 0 "HR?" V 7000 1950 50  0000 L CNN
+F 1 "19K" V 6900 2000 50  0000 L CNN
+F 2 "" V 6730 2050 50  0001 C CNN
+F 3 "~" H 6800 2050 50  0001 C CNN
+F 4 "Printed" V 6700 1900 50  0000 L CNN "Package"
+	1    6800 2050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 200sx-s13-analog-speedo-rescue:5393-Nissan_200sx-200sx-s13-analog-speedo-rescue-200sx-s13-analog-speedo-rescue HIC2_IC?
+U 1 1 623021C3
+P 6850 1300
+AR Path="/623021C3" Ref="HIC2_IC?"  Part="1" 
+AR Path="/620C8115/6CF30962/623021C3" Ref="HIC2_IC?"  Part="1" 
+F 0 "HIC2_IC?" H 6850 1500 50  0000 C CNN
+F 1 "5393" H 6850 1400 50  0000 C CNN
+F 2 "" H 6875 1725 50  0001 C CNN
+F 3 "" H 6875 1725 50  0001 C CNN
+F 4 "SOIC8" H 6850 1150 50  0000 C CNN "Packag"
+	1    6850 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R HR?
+U 1 1 62304721
+P 7250 2050
+AR Path="/61F68783/62304721" Ref="HR?"  Part="1" 
+AR Path="/61F68C90/62304721" Ref="HR?"  Part="1" 
+AR Path="/61F68783/6CF30962/62304721" Ref="HIC2_R8"  Part="1" 
+AR Path="/620C8115/6CF30962/62304721" Ref="HR?"  Part="1" 
+F 0 "HR?" V 7450 1900 50  0000 L CNN
+F 1 "70K" V 7350 2000 50  0000 L CNN
+F 2 "" V 7180 2050 50  0001 C CNN
+F 3 "~" H 7250 2050 50  0001 C CNN
+F 4 "Printed" V 7150 1900 50  0000 L CNN "Package"
+	1    7250 2050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7400 2050 7500 2050
+Wire Wire Line
+	7500 1500 7500 2050
+Wire Wire Line
+	7500 2050 7500 2550
+Connection ~ 7500 2050
+Wire Wire Line
+	7050 2550 7500 2550
+Wire Wire Line
+	5350 1300 6600 1300
+Wire Wire Line
+	4900 900  7500 900 
+Connection ~ 4900 900 
+Wire Wire Line
+	5950 1400 6600 1400
+Connection ~ 5950 1400
+Wire Wire Line
+	6500 2050 6500 2950
+Wire Wire Line
+	7100 1600 8000 1600
+Wire Wire Line
+	7100 1500 7500 1500
+Wire Wire Line
+	7100 1300 7500 1300
+Wire Wire Line
+	7750 1400 7100 1400
+Wire Wire Line
+	7150 5600 7500 5600
+Wire Wire Line
+	7150 4950 8000 4950
+Wire Wire Line
+	7150 4250 7500 4250
+Wire Wire Line
+	7150 3550 8000 3550
+Connection ~ 7500 2550
+Wire Wire Line
+	7500 2550 7500 4250
+Wire Notes Line
+	2950 6200 2950 650 
+Wire Notes Line
+	8350 650  8350 6200
+Wire Notes Line
+	2950 650  8350 650 
+Text Notes 3100 1100 0    197  ~ 0
+HIC2
+Text Label 5050 5950 0    50   ~ 0
+GND
+Wire Wire Line
+	4100 5950 8000 5950
+Text Label 5250 900  2    50   ~ 0
++5V_SW
+Text Label 6450 1400 2    50   ~ 0
+SPEED_B
+Wire Wire Line
+	6350 1500 6600 1500
+Wire Wire Line
+	7000 1750 6350 1750
+Wire Wire Line
+	6350 1750 6350 1500
+$Comp
+L Device:D HIC2_Z?
+U 1 1 64705ADD
+P 6250 4250
+F 0 "HIC2_Z?" H 6550 4100 50  0000 C CNN
+F 1 "1N4148???" H 6600 4000 50  0000 C CNN
+F 2 "" H 6250 4250 50  0001 C CNN
+F 3 "~" H 6250 4250 50  0001 C CNN
+F 4 "SOD-80" H 5950 4100 50  0000 C CNN "Package"
+F 5 "WHT-GRN" H 5950 4000 50  0000 C CNN "Marking"
+	1    6250 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D HIC2_D?
+U 1 1 6470EE37
+P 6250 5600
+F 0 "HIC2_D?" H 6550 5450 50  0000 C CNN
+F 1 "1N4148???" H 6600 5350 50  0000 C CNN
+F 2 "" H 6250 5600 50  0001 C CNN
+F 3 "~" H 6250 5600 50  0001 C CNN
+F 4 "SOD-80" H 5950 5450 50  0000 C CNN "Package"
+F 5 "WHT-GRN" H 5950 5350 50  0000 C CNN "Marking"
+	1    6250 5600
+	1    0    0    -1  
+$EndComp
+Connection ~ 4900 3250
+Wire Wire Line
+	4900 1650 5350 1650
+Wire Wire Line
+	4900 3250 5500 3250
+$EndSCHEMATC
